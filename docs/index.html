@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Visual Recognition • Support</title>
+    <meta name="description" content="AI Visual Recognition • Technical Support, FAQ, Contact, Privacy Policy and Terms of Use." />
+    <style>
+      :root{
+        --bg:#0a0c12;--surface:#101522;--card:#121a2a;--text:#eaf0ff;--muted:#a9b4cb;
+        --brand:#7aa2ff;--brand-2:#9a7dff;--line:#1b2540;--shadow:0 10px 30px rgba(0,0,0,.35)
+      }
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji",sans-serif}
+      a{color:var(--brand);text-decoration:none}
+      a:hover{text-decoration:underline}
+      .container{max-width:960px;margin:0 auto;padding:20px}
+      .site-header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,rgba(16,21,34,.9),rgba(16,21,34,.6));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+      .site-header .container{display:flex;align-items:center;justify-content:space-between}
+      .brand{font-weight:800;letter-spacing:.3px}
+      .nav a{margin-left:16px;color:var(--muted)}
+      .nav a.active{color:var(--text)}
+      .hero{padding:36px 0}
+      .hero h1{margin:0 0 10px 0;font-size:32px}
+      .hero p{margin:0;color:var(--muted)}
+      .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
+      @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+      .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+      .card h2{margin:0 0 10px 0;font-size:20px}
+      details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;background:rgba(18,26,42,.6)}
+      summary{cursor:pointer;font-weight:600}
+      .muted{color:var(--muted)}
+      .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+      .button{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(122,162,255,.15),rgba(154,125,255,.15));color:var(--text)}
+      .button:hover{border-color:var(--brand)}
+      .site-footer{border-top:1px solid var(--line);margin-top:28px}
+      .site-footer .container{display:flex;justify-content:center;padding:16px;color:var(--muted)}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">AI Visual Recognition</div>
+        <nav class="nav">
+          <a href="index.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>技术支持中心</h1>
+        <p class="muted">AI Visual Recognition — 基于 AI 的图像识别与地理位置推测工具</p>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <h2>快速开始</h2>
+          <ol class="muted" style="padding-left:18px;">
+            <li>在首页选择/拍摄一张图片。</li>
+            <li>等待 AI 分析与位置推测结果。</li>
+            <li>在结果页查看街景对比与深度提示。</li>
+          </ol>
+        </section>
+
+        <section class="card">
+          <h2>订阅与恢复</h2>
+          <p class="muted">提供两档订阅：标准会员 ¥58、专业会员 ¥388。</p>
+          <ul class="muted">
+            <li>恢复购买：应用内“设置 ▸ 订阅 ▸ 恢复购买”。</li>
+            <li>取消订阅：iOS 设置 ▸ Apple ID ▸ 订阅。</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>常见问题（FAQ）</h2>
+        <div class="faq">
+          <details>
+            <summary>支持哪些权限？是否会读取全部相册？</summary>
+            <p class="muted">仅在您授权时使用相机/相册；采用系统照片选择器（PHPicker），只读取您选中的照片，无法后台扫描整个相册。</p>
+          </details>
+          <details>
+            <summary>订阅包含哪些能力？</summary>
+            <p class="muted">标准会员（¥58）：适配常规场景；专业会员（¥388）：支持复杂图像并提供更佳对比与分析体验。</p>
+          </details>
+          <details>
+            <summary>识别结果是否精准？</summary>
+            <p class="muted">AI 推测具有概率性，在夜景、模糊、室内等场景可能存在误差，结果仅供参考。</p>
+          </details>
+          <details>
+            <summary>如何联系客服？</summary>
+            <p class="muted">邮箱：<a href="mailto:support@blackmeta-tech.com">support@blackmeta-tech.com</a></p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta">
+        <a class="button" href="privacy.html">隐私政策</a>
+        <a class="button" href="terms.html">使用条款</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© <span id="year"></span> BlackMeta Tech. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+
